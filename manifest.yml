@@ -1,0 +1,10 @@
+applications:
+- path: .
+  name: testLaravel
+  memory: 128M
+  domain: mybluemix.net
+  buildpack: https://github.com/cloudfoundry/php-buildpack
+env:
+    APP_DEBUG: false
+    CF_STAGING_TIMEOUT: 15
+    CF_STARTUP_TIMEOUT: 15
